@@ -103,7 +103,3 @@ def inbox():
     # According to the ActivityPub spec, we should return a 202 Accepted status
     # to indicate that we have received the request and will process it.
     return "Accepted", 202
-
-# --- Main run block ---
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
